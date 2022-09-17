@@ -26,11 +26,11 @@ spec:
       weight: 10
     - destination:
         host: reviews
-        subset: v1
+        subset: v2
       weight: 20
     - destination:
         host: reviews
-        subset: v1
+        subset: v3
       weight: 70
 ---
 apiVersion: networking.istio.io/v1alpha3
