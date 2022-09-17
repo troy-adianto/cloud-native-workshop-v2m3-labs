@@ -19,7 +19,7 @@ metadata:
   name: bookinfo
 spec:
   hosts:
-  - "*"
+  - "istio-ingressgateway-demo-istio-system.apps.rosa-5t56c.obai.p1.openshiftapps.com"
   gateways:
   - bookinfo-gateway
   http:
