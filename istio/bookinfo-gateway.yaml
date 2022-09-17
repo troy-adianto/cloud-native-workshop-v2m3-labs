@@ -11,15 +11,13 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "*"
+    - "istio-ingressgateway-demo-istio-system.apps.rosa-5t56c.obai.p1.openshiftapps.com"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: bookinfo
 spec:
-  hosts:
-  - "istio-ingressgateway-demo-istio-system.apps.rosa-5t56c.obai.p1.openshiftapps.com"
   gateways:
   - bookinfo-gateway
   http:
