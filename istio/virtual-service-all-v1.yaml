@@ -43,8 +43,8 @@ spec:
   http:
   - route:
     - destination:
-        host: ratings
-        subset: v1
+        host: ratings.book-info.svc.green-mesh-imports.local
+        
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
