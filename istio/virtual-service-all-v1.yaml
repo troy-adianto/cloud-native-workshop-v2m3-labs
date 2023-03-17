@@ -43,7 +43,7 @@ spec:
   http:
   - route:
     - destination:
-        host: ratings.book-info.svc.green-mesh-imports.local
+        host: ratings.book-info.svc.cluster.local
         
 ---
 apiVersion: networking.istio.io/v1alpha3
