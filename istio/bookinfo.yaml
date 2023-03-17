@@ -82,7 +82,7 @@ metadata:
     app: ratings
     version: v1
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: ratings
