@@ -42,7 +42,7 @@ kind: DestinationRule
 metadata:
   name: ratings
 spec:
-  host: ratings
+  host: ratings.book-info.svc.cluster.local
   trafficPolicy:
     loadBalancer:
       localityLbSetting:
