@@ -36,6 +36,17 @@ spec:
   - name: v1
     labels:
       version: v1
+  trafficPolicy:
+    loadBalancer:
+      localityLbSetting:
+        enabled: true
+        failover:
+          - from: ap-southeast-1
+            to: us-west
+    outlierDetection:
+      baseEjectionTime: 1m
+      consecutive5xxErrors: 3
+      interval: 10s
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
