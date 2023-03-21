@@ -45,7 +45,7 @@ kind: DestinationRule
 metadata:
   name: rateme
 spec:
-  host: ratings.book-info.svc.cluster.local
+  host: rateme.book-info.svc.cluster.local
   trafficPolicy:
     loadBalancer:
       localityLbSetting:
