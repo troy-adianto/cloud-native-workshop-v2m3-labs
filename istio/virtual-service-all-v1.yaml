@@ -31,7 +31,11 @@ spec:
     - destination:
         host: reviews
         subset: v3
-      weight: 100
+      weight: 60
+    - destination:
+        host: reviews
+        subset: v4
+      weight: 40
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
