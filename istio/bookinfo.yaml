@@ -234,7 +234,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: quay.io/openshiftlabs/ccn-bookinfo-reviews-v3:0.12.0
+        image: quay.io/openshiftlabs/ccn-bookinfo-reviews-v2:0.12.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
