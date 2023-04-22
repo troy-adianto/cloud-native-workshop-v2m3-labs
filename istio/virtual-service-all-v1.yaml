@@ -40,10 +40,10 @@ spec:
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: rateme
+  name: ratings
 spec:
   hosts:
-  - rateme.book-info.svc.cluster.local
+  - ratings.book-info.svc.cluster.local
   http:
   - route:
     - destination:
